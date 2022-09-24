@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' type='text/css' href= 'style.css'>
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+
+         <!--start of navigation-->
+            <nav>
+                <ul>
+                    
+                    <li><a href="main.html"> EXPLORE </a></li>
+                    <li><a href="about.html"> ABOUT US </a></li>
+                    <li> <a href ="main.html"><img src="logo.png" width="90px"></a> </li>
+                    <li><a href="location.html"> LOCATION </a></li>
+                    <li><a href="booking.html"> BOOKING </a></li>
+                    
+                </ul>
+            </nav> <!--end of navigation-->
+        
+    
+            
+
+
+    <!--storage-->
+    <div class="wrapper" >
+    
+       
+        <!--Welcome header -->
+        <div class="welcome">
+
+            <img src="tcm.gif" width="600">
+        </div>
+
+        <!--Dynamic Directive-->
+        <div class=  "buttons-fixed" id="dynamic-buttons">
+            
+          
+               <a href = "https://www.facebook.com/childrensmuseumdenver" v-pin:[direction]="20" ><img src="facebook.png" width="50px"></a>
+                <br><br><br>
+                <a href = "https://www.instagram.com/childrensmuseum/?hl=en" v-pin:[direction]="20"><img src="instagram.png" width="50px"></a>
+            
+        </div>
+
+
+        <!--Contains the brief description of the website -->
+        <div class="gallery-description">
+            <table class = "welcome-page-table" cellspacing= 0; border="0" padding= 0;>
+                <tr>
+                <td><img src="Thegallery.gif" width="100%" > </td>
+                <td>
+                    <h2> Have fun while learning!</h2>
+                    <p>Children's Museum is an educational museum that aims to help children with their needs
+                        and interests by rendering shows and programs. These programs may encourage them to have fun 
+                        while learning. Fun is what kids always enjoys so if you can make them do what they don't want
+                        to do, with fun, then it's a bonus. They learn leadership skills, team 
+                        spirit, self-confidence, and communication throught most of the programs. 
+                        That's why, Children's Museum offers programs that include
+                        fun activities and stories in them to create child interest. </p>
+
+                        <br><br>
+                        <a href = "about.html" class = button-ourstory > OUR STORY </a>
+                </td>
+                
+                </tr>
+
+                <tr>
+                    <td>
+                        <h2> FIND A BRANCH NEAR YOU </h2>
+                        <p> We have branches all over Australia waiting for your visit. 
+                            Check and search for galleries near you!
+
+                            <br><br>
+                        <center><a href = "location.html" class = button-ourstory> FIND A BRANCH </a></center>
+                    </td>
+                    <td>
+                        <img src="location.gif" width="100%">
+                    </td>
+                    
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="booking.gif" width="100%">
+                        </td>
+                        <td>
+                            <h2> BOOK AND VISIT </h2>
+                            <p> We have branches all over Australia waiting for your visit. 
+                                Check and search for galleries near you!
+    
+                                <br><br>
+                            <center><a href = "booking.html" class = button-ourstory> SETUP A SCHEDULE</a></center>
+                        </td>
+                        
+                        </tr>
+                    </table>
+           
+           
+        </div>
+
+        
+
+
+        <div class="footer">
+            <img src="logo.png" width="100px"><br>
+            ©2021 | All Rights Reserved. | Terms of Service | Privacy Policy
+
+        </div>
+
+
+       
+
+    </div>
+
+</body>
+<script src="app.js"></script>
+</html>

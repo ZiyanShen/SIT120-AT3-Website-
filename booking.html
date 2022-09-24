@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body>
+
+    <!--navigation-->
+
+
+
+
+
+
+    <!--storage-->
+    <div class="wrapper"></div>
+
+
+    <div class="bookingWrapper">
+
+        <div class="navWrapper">
+            <nav>
+                <ul>
+
+                    <li><a href="main.html"> EXPLORE </a></li>
+                    <li><a href="about.html"> ABOUT US </a></li>
+                    <li> <a href="main.html"><img src="logo.png" width="90px"></a> </li>
+                    <li><a href="location.html"> LOCATION </a></li>
+                    <li><a href="booking.html"> BOOKING </a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <div class="booking-header">
+            <img src="book-reservation.gif">
+
+        </div>
+        <!--Form input bindings component -->
+        <div id="vue-form" class="formContainer">
+            <h2>BOOK NOW!</h2>
+            <form @submit.prevent="handleSubmit">
+                <div class="formContainerLeft">
+
+                    <label>Email: </label>
+                    <input type="email" v-model="entry.email" placeholder="Enter email" class="inputFieldsBooking"
+                        required /></br>
+                    <label>Name: </label><input type="text" v-model="entry.name" placeholder="Enter name"
+                        class="inputFieldsBooking" required /></br>
+                    <label>Contact Number: </label><input type="number" v-model="entry.contactNumber"
+                        placeholder="Enter number" class="inputFieldsBooking" required /></br>
+
+
+
+                </div>
+
+                <div class="formContainerRight">
+
+                    <label>Date: </label>
+                    <input type="date" v-model="entry.date" placeholder="Enter date" class="inputFieldsBooking"
+                        required /> </br>
+                    <label>Time start: </label>
+                    <input type="time" v-model="entry.timeStart" placeholder="asdasd" class="inputFieldsBooking"
+                        required /></br>
+                    <label>Time end: </label>
+                    <input type="time" v-model="entry.timeEnd" placeholder="asdasd" class="inputFieldsBooking"
+                        required /></br>
+                    <label>Select Branch: </label>
+                    <select v-model="entry.branch" class="inputFieldsBooking" required>
+                        <option value="Perth Branch">Perth Branch</option>
+                        <option value="Adelaide Branch">Adelaide Branch</option>
+                        <option value="Burwood Branch">Burwood Branch</option>
+                        <option value="Chatswood Branch">Chatswood Branch</option>
+                        <option value="Hurstville Branch">Hurstville Branch</option>
+                        <option value="Brisbane Branch">Brisbane Branch</option>
+                        <option value="Sunnybank Branch">Sunnybank Branch</option>
+                        <option value="Melbourne Branch">Melbourne Branch</option>
+                        <option value="Box Hill Branch">Box Hill Branch</option>
+                        <option value="Melbourne Monash Branch">Melbourne Monash Branch</option>
+                    </select>
+
+
+                </div>
+
+                <div class="submitButtonDiv">
+                    <button type="submit" class="btn success">Submit Form</button>
+                </div>
+
+
+            </form>
+
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+    <div class="footer">
+        <img src="logo.png" width="100px"><br>
+        ©2021 | All Rights Reserved. | Terms of Service | Privacy Policy
+
+    </div>
+
+
+
+
+
+</body>
+
+<script src="app.js"></script>
+
+
+
+</script>
+
+</html>

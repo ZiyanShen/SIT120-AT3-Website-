@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' type='text/css' href= 'style.css'>
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+
+         <!--navigation-->
+            <nav>
+                <ul>
+                    
+                    <li><a href="main.html"> EXPLORE </a></li>
+                    <li><a href="about.html"> ABOUT US </a></li>
+                    <li> <a href ="main.html"><img src="logo.png" width="90px"></a> </li>
+                    <li><a href="location.html"> LOCATION </a></li>
+                    <li><a href="booking.html"> BOOKING </a></li>
+                    
+                </ul>
+            </nav>
+
+    <div class = "wrapper">
+
+       
+
+            <div class = "map-header">
+                    <img src="map.gif" width="500">
+            </div>
+
+            <!-- Used filters component in search function -->
+            <div class = "locationswrapper">
+                <div id="vue-search" class="locationContainer">
+                    <div class="searchBarDiv">
+                        <input type="text" v-model="search" placeholder="search locations" class="searchBar" />
+                    </div>
+                    <div v-for="location in filteredLocations" class="locationDiv">
+                        <h1>{{ location.name }}</h1>
+                        <p class="locationDetails">{{location.address}} <br /> {{location.contact}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <img src="logo.png" width="100px"><br>
+                ©2021 | All Rights Reserved. | Terms of Service | Privacy Policy
+    
+            </div>
+    
+            
+    
+    
+        </div>
+        
+    </body>
+
+    <script src="app.js"></script>
+    </html>
